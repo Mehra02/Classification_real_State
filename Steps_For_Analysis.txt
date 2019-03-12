@@ -1,0 +1,34 @@
+Classification Approach steps.
+
+Step1: Importing the data using pandas library
+All the three CSV files has been imported and has been merged into one big file as we required the information of 	all the three files.
+
+Step2. Summarising the data.
+Ones the data imported we have to figure out all the info of the data such as missing values, no. of categorical 	variables, outliers, shape and summary of the data.
+
+Step3.Missing value treatment
+First task to proceed for the data analysis was to look out for all the missing values and treat them.Its been 	observed that there few columns in which proportion( more than 50%) of missing data was very high and which seem not good for analysis point of  view. So decided  to drop all those variables along with the variable having constant values as those variables must not be considered in analysis.
+After selecting the most relevant variable which would required intensive domain knowledge but I consider as according to my point of view as I found them the most impactable  variables, left with only two variable which is having missing values and those missing treated with the median of the respective variable.
+
+Step4:Outliers treatment
+Outliers has been treated by capping method in which all the outliers has been brought inside the area of dense distribution. There could some other approaches like removing the extreme outliers data points but I decided the capping of data points so as to avoid full information lost.
+
+Step5: One Hot Encoding of the data 
+As there are ML algoriths which do not work the categorical data so encoded the data by creating the dummies of the categorical data.
+
+Step6: Train Test Split of the data.
+Ones the data has been manipulated and all the missing values and outliers has been  treated, split the data into Test and Train in 30% and 70% proportion respectively.
+
+Step6: Scaling of the data
+After test train split the major task was to choose the predictors variable and the target variables.Later on the predictors values has been scaled. Scaling is normally used to bring all the data values on the same line of measure.
+
+Step7: Choosing the classification approach with all the crucial arguments for multiclass classification as we have three categories of target variable.
+Chose Logistic Regression for the analysis and to predict the targeted response.
+
+Step8: Training of the model on the Train Data set.
+Step9: Ones the data has been trained it is ready for test for data where the model will show its actual accuracy as this data set was not the part of its training and the data points are completely new to the model.
+  Final Step:
+Looking for accuracy of the model because that is the only thing what we have to consider in the end of  the day.
+
+
+
